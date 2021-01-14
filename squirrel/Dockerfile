@@ -6,11 +6,13 @@ MAINTAINER zhengqijun zhengqijun0121@qq.com
 # set shell
 ENV SHELL=/bin/bash
 
+# set tzdata noninteractive
+ENV DEBIAN_FRONTEND noninteractive
+
 # equipment
 RUN apt-get update && \
     apt-get install -y --no-install-recommends --allow-downgrades --fix-missing \
     software-properties-common \
-    dialog \
     git-core \
     curl \
     wget \
