@@ -10,6 +10,7 @@ ENV SHELL=/bin/bash
 RUN apt-get update && \
     apt-get install -y --no-install-recommends --allow-downgrades --fix-missing \
     software-properties-common \
+    dialog \
     git-core \
     curl \
     wget \
